@@ -5,6 +5,10 @@ body{
     background-color: #121212;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 div{
     border: 2px solid #D4AF37;
@@ -262,7 +266,7 @@ svg:hover{
         transform: translateY(0px);
     }
 }
-@media (max-width: 1024px) { /* tablet view */
+@media (max-width: 800px) { /* tablet view */
     svg{
         height: 80px;
     }
@@ -302,13 +306,20 @@ svg:hover{
 }
 @media (max-width: 600px) { /* mobile view */
     svg{
-        height: 70px;
+        height: 50px;
     }
     .header {
         gap: 10%;
+        width: 97%;
+        height: 60px;
     }
     #name{
         font-size: 29px;
+    }
+    .header_left{
+        display: none;
+        width: 0%;
+        height: 0%;
     }
     .header_right a{
         font-size: 25px;
@@ -319,7 +330,13 @@ svg:hover{
         height: 100%;
     }
     #latest_projects_button{
-        font-size: 40px;
+        font-size: 30px;
+    }
+    #about_left_bottom{
+        gap: 30px;
+    }
+    #about_left_bottom a svg{
+        height: 40px;
     }
     .about_right{
         width: 0%;
@@ -329,18 +346,41 @@ svg:hover{
         height: 0%;
         width: 0%;
     }
-    #img2{
-        height: 110px;
-        width: 110px;
-        position: relative;
+    .skills{
+        flex-direction: column;
+        gap: 3px;
     }
-    .projects_show p{
-        width: 135px;
+    .skill_show{
+        height: 170px;
+        width: 235px;
     }
     .skill_show h2{
         font-size: 24px;
     }
     .skill_show p{
         font-size: 20px;
+        width: 235px;
+    }
+    #img2{
+        height: 0px;
+        width: 0px;
+        display: none;
+    }
+    .projects_show p{
+        width: 135px;
+    }
+    .projects_up{
+        flex-direction:column;
+        height: 100%;
+        gap: 10px;
+    }
+    .projects_down{
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+    .projects_show{
+        width: 300px;
+        height: 30%;
     }
 }
