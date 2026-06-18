@@ -352,14 +352,14 @@ svg:hover{
     }
     .skill_show{
         height: 170px;
-        width: 235px;
+        width: 260px;
     }
     .skill_show h2{
-        font-size: 24px;
+        font-size: 20px;
     }
     .skill_show p{
-        font-size: 20px;
-        width: 235px;
+        font-size: 18px;
+        width: 260px;
     }
     #img2{
         height: 0px;
